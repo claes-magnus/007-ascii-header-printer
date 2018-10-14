@@ -31,7 +31,7 @@ func print_header(arr_of_letters) {
             l_n = l_n ~ letters[index].v[current_l_n]; # may need mod
         }
         l_n = l_n ~ "  "; # may need mod
-        header[current_l_n] = l_n; # may not be needed
+        header[l_n] = l_n; # may not be needed
         current_l_n = current_l_n + 1; # may not be needed
     }
 
