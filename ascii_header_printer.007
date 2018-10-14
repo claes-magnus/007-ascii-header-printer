@@ -42,7 +42,7 @@ print_header(["A","B"]);
 func find_index_of_letter(search_term) {
     my i = 0;
     for (letters) -> item {
-        if(search_term === item.letter) {
+        if(search_term == item.letter) {
             return i;
         }
         i = i + 1;
