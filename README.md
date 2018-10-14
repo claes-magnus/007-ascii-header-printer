@@ -12,4 +12,4 @@ it's OK!*
 
 ### Example output:
 
-![screen shot](https://github.com/claes-magnus/007-ascii-header-printer/ss.png)
+![screen shot](https://github.com/claes-magnus/007-ascii-header-printer/blob/master/ss.png)
