@@ -1,3 +1,13 @@
+# PRINTS HEADERS USING ASCII-ART FONT
+#
+# Usage: print_header(["H","E","L","L","O"," ","W","O","R","L","D"]);
+#
+# Since 007 currently don't allow sequencing of strings, you need to
+# use the array format. Considering that headers are not common I think
+# it's OK!
+#
+
+
 my letters = [
     { letter: "A", v: [
     "     e     ",
@@ -5,9 +15,9 @@ my letters = [
     "   /Y88b   ",
     "  /  Y88b  ",
     " /____Y88b ",
-    "/      Y88b"
+    "/      Y88b",
+    "           "
     ] },
-
     { letter: "B", v: [
     "888~~\ ",
     "888   |",
@@ -15,6 +25,231 @@ my letters = [
     "888  \ ",
     "888   |",
     "888__/ ",
+    "       "
+    ] },
+    { letter: "C", v: [
+    " e88~-_  ",
+    "d888   \ ",
+    "8888     ",
+    "8888     ",
+    "Y888   / ",
+    "  88_-~  ",
+    "         "
+    ] },
+    { letter: "D", v: [
+    "888~-_  ",
+    "888   \ ",
+    "888    |",
+    "888    |",
+    "888   / ",
+    "888_-~  ",
+    "        "
+    ] },
+    { letter: "E", v: [
+    "888~~ ",
+    "888___",
+    "888   ",
+    "888   ",
+    "888   ",
+    "888___",
+    "       "
+    ] },
+    { letter: "F", v: [
+    "888~~ ",
+    "888___",
+    "888   ",
+    "888   ",
+    "888   ",
+    "888   ",
+    "      "
+    ] },
+    { letter: "G", v: [
+    " e88~~\ ",
+    "d888    ",
+    "8888 __ ",
+    "8888   |",
+    "Y888   |",
+    " 88___/ ",
+    "        "
+    ] },
+    { letter: "H", v: [
+    "888   |",
+    "888___|",
+    "888   |",
+    "888   |",
+    "888   |",
+    "888   |",
+    "       "
+    ] },
+    { letter: "I", v: [
+    "888",
+    "888",
+    "888",
+    "888",
+    "888",
+    "888",
+    "   "
+    ] },
+    { letter: "J", v: [
+    "    888",
+    "    888",
+    "    888",
+    "    888",
+    "|   88P",
+    " \__8  ",
+    "       "
+    ] },
+    { letter: "K", v: [
+    "888  /   ",
+    "888 /    ",
+    "888/\    ",
+    "888  \   ",
+    "888   \  ",
+    "888    \ ",
+    "        "
+    ] },
+    { letter: "L", v: [
+    "888    ",
+    "888    ",
+    "888    ",
+    "888    ",
+    "888    ",
+    "888____"
+    ] },
+    { letter: "M", v: [
+    "     e    e     ",
+    "    d8b  d8b    ",
+    "   d888bdY88b   ",
+    "  / Y88Y Y888b  ",
+    " /   YY   Y888b ",
+    "/          Y888b",
+    "                "
+    ] },
+    { letter: "N", v: [
+    "888b    |",
+    "|Y88b   |",
+    "| Y88b  |",
+    "|  Y88b |",
+    "|   Y88b|",
+    "|    Y888",
+    "         "
+        ] },
+    { letter: "O", v: [
+    "  ,88~-_  ",
+    " d888   \ ",
+    "88888    |",
+    "88888    |",
+    " Y888   / ",
+    "   88_-~  ",
+    "          "
+    ] },
+    { letter: "P", v: [
+    "888~-_  ",
+    "888   \ ",
+    "888    |",
+    "888   / ",
+    "888_-~  ",
+    "888     ",
+    "        "
+    ] },
+    { letter: "Q", v: [
+    "  ,88~-_  ",
+    " d888   \ ",
+    "88888    |",
+    "88888    |",
+    " Y888 \ / ",
+    "   88__X  ",
+    "        \ "
+    ] },
+    { letter: "R", v: [
+    "888~-_  ",
+    "888   \ ",
+    "888    |",
+    "888   / ",
+    "888_-~  ",
+    "888 ~-_ ",
+    "        "
+    ] },
+    { letter: "S", v: [
+    ",d88~~\ ",
+    "8888   ",
+    " Y88b  ",
+    "  Y88b,",
+    "   8888",
+    "\__88P ",
+    "        "
+    ] },
+    { letter: "T", v: [
+    "~~~888~~~",
+    "   888   ",
+    "   888   ",
+    "   888   ",
+    "   888   ",
+    "   888   ",
+    "         "
+    ] },
+    { letter: "U", v: [
+    "888   |",
+    "888   |",
+    "888   |",
+    "888   |",
+    "Y88   |",
+    " 78__/ ",
+    "       "
+    ] },
+    { letter: "V", v: [
+    "Y88b      / ",
+    " Y88b    /  ",
+    "  Y88b  /   ",
+    "   Y888/    ",
+    "    Y8/     ",
+    "     Y      ",
+    "            "
+    ] },
+    { letter: "W", v: [
+    "Y88b         / ",
+    " Y88b       /  ",
+    "  Y88b  e  /   ",
+    "   Y88bd8b/    ",
+    "    Y88Y8Y     ",
+    "     Y  Y      ",
+    "               "
+    ] },
+    { letter: "X", v: [
+    "Y88b    / ",
+    " Y88b  /  ",
+    "  Y88b/   ",
+    "  /Y88b   ",
+    " /  Y88b  ",
+    "/    Y88b ",
+    "          "
+    ] },
+    { letter: "Y", v: [
+    "Y88b    / ",
+    " Y88b  /  ",
+    "  Y88b/   ",
+    "   Y8Y    ",
+    "    Y     ",
+    "   /      ",
+    "          "
+    ] },
+    { letter: "Z", v: [
+    "~~~~d88P",
+    "    d88P",
+    "   d88P ",
+    "  d88P  ",
+    " d88P   ",
+    "d88P____",
+    "        "
+    ] },
+    { letter: " ", v: [
+    "   ",
+    "   ",
+    "   ",
+    "   ",
+    "   ",
+    "   ",
+    "   "
     ] }
 ];
 
@@ -28,19 +263,17 @@ func print_header(arr_of_letters) {
 
             my index = find_index_of_letter(letter);
 
-            l_n = l_n ~ letters[index].v[current_l_n]; # may need mod
+            l_n = l_n ~ letters[index].v[current_l_n];
             l_n = l_n ~ "   ";
         }
          # may need mod
-        header[current_l_n] = l_n; # may not be needed
-        current_l_n = current_l_n + 1; # may not be needed
+        header[current_l_n] = l_n;
+        current_l_n = current_l_n + 1;
 
         say(l_n);
     }
-
-
 }
-print_header(["A","B"]);
+print_header(["H","E","L","L","O"," ","W","O","R","L","D"]);
 
 func find_index_of_letter(search_term) {
     my i = 0;
@@ -51,3 +284,4 @@ func find_index_of_letter(search_term) {
         i = i + 1;
     }
 }
+
