@@ -4,11 +4,7 @@
 
 This util for the [007 programming language](https://github.com/masak/007) prints headers using a ASCII-art font (Bolger). Credit to the artist who made the ASCII-letters. I found Bolger at [Text to ASCII Art Generator](http://patorjk.com/software/taag/#p=display&h=0&v=1&f=Bolger&t=)
 
-**Usage:** print_header(["H","E","L","L","O"," ","W","O","R","L","D"]);
-
-*Since 007 currently don't allow sequencing of strings, you need to
-use the array format. Considering that headers are not common, I think
-it's OK!*
+**Usage:** `printHeader("HELLO WORLD");`
 
 ### Example output:
 
