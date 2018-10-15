@@ -254,6 +254,11 @@ func printHeader(string) {
         my line = "";
         for ^string.chars() -> i {
             my letter = string.substr(i, 1);
+            if !charLookup.has(letter) {
+                throw new Exception {
+                    message: "Could not print character '" ~ letter ~ "'"
+                };
+            }
             line = line ~ charLookup[letter][currentLineNumber] ~ "   ";
         }
         say(line);
