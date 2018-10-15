@@ -47,7 +47,7 @@ my charLookup = {
         "888   ",
         "888   ",
         "888___",
-        "       "
+        "      "
     ],
     "F": [
         "888~~ ",
@@ -101,7 +101,7 @@ my charLookup = {
         "888  \   ",
         "888   \  ",
         "888    \ ",
-        "        "
+        "         "
     ],
     "L": [
         "888    ",
@@ -109,7 +109,8 @@ my charLookup = {
         "888    ",
         "888    ",
         "888    ",
-        "888____"
+        "888____",
+        "       "
     ],
     "M": [
         "     e    e     ",
@@ -249,7 +250,7 @@ my charLookup = {
 };
 
 func print_header(string) {
-    for ^6 -> currentLineNumber {
+    for ^7 -> currentLineNumber {
         my line = "";
         for ^string.chars() -> i {
             my letter = string.substr(i, 1);
