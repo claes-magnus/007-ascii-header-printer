@@ -1,6 +1,6 @@
 # PRINTS HEADERS USING ASCII-ART FONT
 #
-# Usage: print_header("HELLO WORLD");
+# Usage: printHeader("HELLO WORLD");
 #
 
 my charLookup = {
@@ -249,7 +249,7 @@ my charLookup = {
     ],
 };
 
-func print_header(string) {
+func printHeader(string) {
     for ^7 -> currentLineNumber {
         my line = "";
         for ^string.chars() -> i {
@@ -260,4 +260,4 @@ func print_header(string) {
     }
 }
 
-print_header("HELLO WORLD");
+printHeader("HELLO WORLD");
