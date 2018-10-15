@@ -1,10 +1,6 @@
 # PRINTS HEADERS USING ASCII-ART FONT
 #
-# Usage: print_header(["H","E","L","L","O"," ","W","O","R","L","D"]);
-#
-# Since 007 currently don't allow sequencing of strings, you need to
-# use the array format. Considering that headers are not common I think
-# it's OK!
+# Usage: print_header("HELLO WORLD");
 #
 
 
@@ -334,26 +330,20 @@ my letters = [
     }
 ];
 
-func print_header(arr_of_letters) {
-    my header = ["","","","","",""];
-    my current_l_n = 0; # may not be needed
-
-    for header -> l_n {
-        for arr_of_letters -> letter {
+func print_header(string) {
+    for ^6 -> currentLineNumber {
+        my line = "";
+        for ^string.chars() -> i {
+            my letter = string.substr(i, 1);
             my index = find_index_of_letter(letter);
 
-            l_n = l_n ~ letters[index].v[current_l_n];
-            l_n = l_n ~ "   ";
+            line = line ~ letters[index].v[currentLineNumber] ~ "   ";
         }
-
-        header[current_l_n] = l_n;
-        current_l_n = current_l_n + 1;
-
-        say(l_n);
+        say(line);
     }
 }
 
-print_header(["H","E","L","L","O"," ","W","O","R","L","D"]);
+print_header("HELLO WORLD");
 
 func find_index_of_letter(search_term) {
     my i = 0;
