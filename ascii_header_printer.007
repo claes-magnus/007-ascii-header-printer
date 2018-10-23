@@ -249,7 +249,7 @@ my charLookup = {
     ],
 };
 
-func printHeader(string) {
+export func printHeader(string) {
     for ^7 -> currentLineNumber {
         my line = "";
         for ^string.chars() -> i {
