@@ -265,4 +265,6 @@ export func printHeader(string) {
     }
 }
 
-printHeader("HELLO WORLD");
+func MAIN() {
+    printHeader("HELLO WORLD");
+}
